@@ -7,12 +7,12 @@ const getSpeciesMap = () => species
   }, {});
 
 const getNamesMap = (sorted, genre) => species
-  .reduce((acc, { location, name, residents }) => {
+  .reduce((acc, { location, name: specieName, residents }) => {
     const specieResidents = genre
       ? residents.filter((resident) => resident.sex === genre).map((resident) => resident.name)
       : residents.map((resident) => resident.name);
     const specieObject = {
-      [name]: sorted ? specieResidents.sort() : specieResidents,
+      [specieName]: sorted ? specieResidents.sort() : specieResidents,
     };
 
     acc[location] = acc[location] ? [...acc[location], specieObject] : [specieObject];
