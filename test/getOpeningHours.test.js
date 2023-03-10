@@ -15,10 +15,10 @@ describe('Testes da função getOpeningHours', () => {
   });
   it('Passados um dia e um horário que o zoo está fechado, retorna a string "The zoo is closed"', () => {
     const closed = 'The zoo is closed';
-    expect(getOpeningHours('Monday', '12:00-AM')).toBe(closed);
+    expect(getOpeningHours('Monday', '12:22-PM')).toBe(closed);
     expect(getOpeningHours('Sunday', '09:00-PM')).toBe(closed);
-    expect(getOpeningHours('Monday', '12:00-PM')).toBe(closed);
-    expect(getOpeningHours('Monday', '10:00-AM')).toBe(closed);
+    expect(getOpeningHours('Saturday', '07:59-AM')).toBe(closed);
+    expect(getOpeningHours('Thursday', '08:00-PM')).toBe(closed);
   });
   it('Passados um dia e um horário que o zoo está aberto, retorna a string "The zoo is open"', () => {
     const open = 'The zoo is open';
