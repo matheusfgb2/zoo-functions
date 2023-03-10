@@ -23,11 +23,8 @@ const getAnimalMap = (options) => {
   if (!options || !options.includeNames) {
     return getSpeciesMap();
   }
-  const { sex, sorted } = options;
-  if (sex) {
-    return getNamesMap(sorted, sex);
-  }
-  return getNamesMap(sorted);
+  const { sorted, sex } = options;
+  return getNamesMap(sorted, sex);
 };
 
 module.exports = getAnimalMap;
