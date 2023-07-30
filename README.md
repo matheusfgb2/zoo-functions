@@ -1,13 +1,3 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
 # Projeto Zoo Functions
 ## Sobre
 O projeto, realizado durante o módulo de fundamentos da Trybe, tem como objetivo organizar as informações de um zoológico. Por meio de funções em ES6 e Higher Order Functions, é possível buscar detalhes sobre os animais, como espécie e local de origem, assim como dados das pessoas envolvidas na manutenção e cuidado do zoológico. Além disso foram implementados testes para verificar o correto funcionamento da aplicação, tornando-a confiável e eficiente.
